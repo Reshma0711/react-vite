@@ -1,42 +1,37 @@
 
 import './App.css'
-import Greeting from './components/greeting/greeting'
 
-import MainHeading from './components/heading/heading2'
-// import CustomImage from './components/images/image1'
-import CustomList from './components/lists/list1'
-
+import CustomLogin from './components/login/login2'
+import { CustomLogin3 } from './components/login/login2'
+import { CustomLogin2 } from './components/login/login2'
 
 
 const App=()=>{
- const names= ["pushpa","reshma","nikhi"]
+ 
   
   return(
-    <>
-    <MainHeading heading={"List of Names"}>
+    
+     <>
+      {/* <CustomLogin text="reshma">
+      how are you?
+      <MainHeading heading="I am Good"/>
+      </CustomLogin>
       
-     <CustomList list={["pushpa","reshma","nikhi"]}/>
+     <CustomLogin text="vasanthi">
+       where are you?
+      </CustomLogin> */}
 
-    </MainHeading>  
-  <Greeting text={"hello"}>
-    <h5>Everyone</h5>
-  </Greeting>
- 
-    {
-      names.map((eachval,index)=>{
-        return (
-          <h2 key={index}><Greeting/> {eachval}</h2>
-        )
-      })
-    }
+
+
+      <CustomLogin isAdmin={true}/>
+      <CustomLogin isAdmin={false}/>
+
+      <CustomLogin2 isAdmin={true}/>
+      <CustomLogin2 isAdmin={false}/>
+
+      <CustomLogin3 isAdmin={null}/>
       
-
-      
-      
-
-
-
-
+      <CustomLogin3 isAdmin={undefined}/>
 
 
         </> 
