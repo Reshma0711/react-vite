@@ -1,0 +1,14 @@
+
+
+
+
+
+.container {
+    height: 50vh;
+    width: 30vw;
+    border: 2px solid black;
+}
+.image{
+    height:100px;
+    width:150px;
+}
