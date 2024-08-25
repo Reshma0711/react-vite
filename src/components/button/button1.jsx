@@ -2,9 +2,10 @@
 
 
 
-const CustomButton=()=>{
+const CustomButton=(prop)=>{
+    const {text,bgcolor,clickHandler}=prop
     return(
-        <button onClick={()=>{}}>Click Me</button>
+         <button onClick={clickHandler} style={{backgroundColor:bgcolor}}>{text}</button>
     )
 }
 

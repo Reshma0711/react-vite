@@ -2,21 +2,21 @@
 
 
 
-const MainHeading=()=>{
+const MainHeading=(prop)=>{
+    const{heading}=prop
     return(
         <>
-         <h1>Reshma</h1>
-        <h2>Reshma</h2>
-        <h3>Reshma</h3>
-        <h4>Reshma</h4>
-        <h5>Reshma</h5>
-        <h6>Reshma</h6>
+        <h1>{heading}</h1>
         </>
     )
 }
 
-
-
-
-
 export default MainHeading
+
+const SecondaryHeading=(prop)=>{
+    const{heading}=prop
+    return(
+     <h2>{heading}</h2>
+    )
+}
+export {SecondaryHeading}

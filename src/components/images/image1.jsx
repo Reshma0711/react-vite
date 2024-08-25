@@ -1,9 +1,10 @@
 
-
-
-
-const CustomImage=()=>{
-    return <img src="https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg" height={250} width={250} alt="flower"/>
+const CustomImage=(prop)=>{
+    const {source,height,width,text}=prop
+    return (
+        <img src={source} height={height} width={width} altText={text}/>
+    )
 }
-
 export default CustomImage
+
+
