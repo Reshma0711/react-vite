@@ -100,10 +100,9 @@ const CustomList=(prop)=>{
         return(
             <ul>
             {
-                list.map((eachItem)=>{
+                list.map((eachItem,index)=>{
                     return(
-                       
-                        <li>{eachItem}</li>
+                        <li key={index}> {eachItem} </li>
                     )
                 })
             }
