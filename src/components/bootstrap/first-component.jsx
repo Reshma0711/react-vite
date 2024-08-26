@@ -33,28 +33,28 @@ const CustomCard = () => {
           <button
             type="button"
             className="btn btn-primary btn-lg btn-floating mx-2"
-            style={{ backgroundColor: "#54456b" }}
+            style={{ backgroundColor: "#54456b", display :"none"  }}
           >
             <i className="fab fa-facebook-f" />
           </button>
           <button
             type="button"
             className="btn btn-primary btn-lg btn-floating mx-2"
-            style={{ backgroundColor: "#54456b" }}
+            style={{ backgroundColor: "#54456b", display :"none"  }}
           >
             <i className="fab fa-youtube" />
           </button>
           <button
             type="button"
             className="btn btn-primary btn-lg btn-floating mx-2"
-            style={{ backgroundColor: "#54456b" }}
+            style={{ backgroundColor: "#54456b" ,display :"none" }}
           >
             <i className="fab fa-instagram" />
           </button>
           <button
             type="button"
             className="btn btn-primary btn-lg btn-floating mx-2"
-            style={{ backgroundColor: "#54456b" }}
+            style={{ backgroundColor: "#54456b" , display :"none" } }
           >
             <i className="fab fa-twitter" />
           </button>
