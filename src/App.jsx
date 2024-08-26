@@ -1,40 +1,33 @@
 
 import './App.css'
+import CustomCard from './components/bootstrap/first-component'
+// import CustomButton from './components/button/button1'
+import CustomreactCard from './components/bootstrap/reactbootstrapcard'
+import EmployeeData from './data/employeedata'
 
-import CustomLogin from './components/login/login2'
-import { CustomLogin3 } from './components/login/login2'
-import { CustomLogin2 } from './components/login/login2'
 
 
 const App=()=>{
  
   
-  return(
+  return (
+     <CustomCard/>
+  //  <>
+  //     {/* <CustomButton text={"ClickMe!"} bgcolor={"Green"}/> */}
+  //    {/* {
+  //     EmployeeData.map((each)=>{
+  //       return(
+  //         <>
+  //          <CustomreactCard title={each.name} text={each.designation}/>
+  //         </>
+  //       )
+  //     })
+  //    } */}
+     
     
-     <>
-      {/* <CustomLogin text="reshma">
-      how are you?
-      <MainHeading heading="I am Good"/>
-      </CustomLogin>
-      
-     <CustomLogin text="vasanthi">
-       where are you?
-      </CustomLogin> */}
+  //       </> 
 
-
-
-      <CustomLogin isAdmin={true}/>
-      <CustomLogin isAdmin={false}/>
-
-      <CustomLogin2 isAdmin={true}/>
-      <CustomLogin2 isAdmin={false}/>
-
-      <CustomLogin3 isAdmin={null}/>
-      
-      <CustomLogin3 isAdmin={undefined}/>
-
-
-        </> 
+       
   )
 }
 export default App

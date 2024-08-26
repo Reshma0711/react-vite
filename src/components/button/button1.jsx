@@ -3,9 +3,10 @@
 
 
 const CustomButton=(prop)=>{
-    const {text,bgcolor,clickHandler}=prop
+    const {text="button",onPress=(()=>{}),bgcolor}=prop
+     const buttonstyles={backgroundColor:bgcolor}
     return(
-         <button onClick={clickHandler} style={{backgroundColor:bgcolor}}>{text}</button>
+         <button onClick={onPress} style={buttonstyles}>{text}</button>
     )
 }
 
