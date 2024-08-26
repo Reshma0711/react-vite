@@ -1,9 +1,10 @@
 
 import CustomreactCard from "./reactbootstrapcard"; // Import your custom card component
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CustomCard = () => {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column">
     
       {/* Header Section */}
       <header className="bg-primary text-white text-center py-4">
@@ -12,7 +13,7 @@ const CustomCard = () => {
           <p>Explore this responsive layout built with React and Bootstrap</p>
         </div>
       </header>
-
+                                   
       {/* Main Content */}
       <main className="flex-grow-1 mt-4">
         <div className="container-fluid mt-5">
@@ -74,3 +75,4 @@ const CustomCard = () => {
 };
 
 export default CustomCard;
+
