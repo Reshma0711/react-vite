@@ -21,7 +21,7 @@ function CustomreactCard(prop) {
         <Card.Text>
           {text}
         </Card.Text>
-    
+        <CustomCounter/>
         {/* <AiFillHeart /> */}
         <Linerloader/><br/><br/>
         <CustomToastify message="I am a card"/><br/>
