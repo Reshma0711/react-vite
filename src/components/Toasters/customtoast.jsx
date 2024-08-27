@@ -1,16 +1,28 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Successtoast, { Errortoast } from './toast-helpers';
+// import Successtoast, { Errortoast } from './toast-helpers';
 
-const CustomToastify = () => {
+
+
+
+
+
+const CustomToastify = ({message}) => {
   
 
   const ClickMe = () => {
+  
+      toast.success(message, {
+        position: 'top-left',
+      });
+  
 
-    Errortoast("I am Error","top-right")
+  //  Successtoast("I am a card","top-right")
+
+    // Errortoast("I am Error","top-right")
 // try{
-//    Successtoast("I am Clicked","top-right")
+//    
 // }
 // catch(err){
 //     Errortoast(err)
@@ -45,7 +57,7 @@ const CustomToastify = () => {
   return (
     <div>
       <button onClick={ClickMe}>Notify!</button>
-      <ToastContainer />
+      <ToastContainer/>
     </div>
   );
 };

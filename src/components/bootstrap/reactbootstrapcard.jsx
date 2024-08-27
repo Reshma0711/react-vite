@@ -8,7 +8,8 @@ import CustomDnaloader from '../loader/dnaloader';
 import Linerloader from '../loader/linerloader';
 import CustomToastify from '../Toasters/customtoast';
 import CustomHeart from '../heart/heart';
-import { AiFillHeart } from "react-icons/ai"
+import { AiFillHeart } from "react-icons/ai";
+import CustomCounter from '../class/counter';
 
 
 function CustomreactCard(prop) {
@@ -20,7 +21,8 @@ function CustomreactCard(prop) {
         <Card.Text>
           {text}
         </Card.Text>
-        <AiFillHeart />
+    
+        {/* <AiFillHeart /> */}
         <Linerloader/><br/><br/>
         <CustomToastify message="I am a card"/><br/>
         <CustomHeart/>
@@ -30,4 +32,5 @@ function CustomreactCard(prop) {
   );
 }
 
-export default CustomreactCard;
+
+export default CustomreactCard

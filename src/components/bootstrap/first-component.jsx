@@ -1,4 +1,5 @@
 
+import CustomCounter from "../class/counter";
 import CustomreactCard from "./reactbootstrapcard"; // Import your custom card component
 
 const CustomCard = () => {
@@ -12,7 +13,7 @@ const CustomCard = () => {
           <p>Explore this responsive layout built with React and Bootstrap</p>
         </div>
       </header>
-
+        <CustomCounter/>
       {/* Main Content */}
       <main className="flex-grow-1 mt-4">
         <div className="container-fluid mt-5">
