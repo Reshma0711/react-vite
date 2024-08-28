@@ -19,9 +19,13 @@ class Youtubebutton extends Component{
             },()=>{
                
                 // console.log("I am clicked")
-                
+                setTimeout(()=>{
                        toast.success("Thanks for Subscribing!", {
                        position: "top-right",
+
+                },0)
+                
+                    
           });
 
                 
