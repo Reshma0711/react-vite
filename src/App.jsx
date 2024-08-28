@@ -1,17 +1,21 @@
 
 
 import './App.css' 
-import ProductList from './components/class/products';
-import ReceipeList from './components/class/receipelist';
-import Mounting from './components/Lifecyclemethodsofclass/mounting';
+import Counter from './components/hooks/useState/counter'
+import EvenOdd from './components/hooks/useState/evenodd'
+import Todo from './components/hooks/useState/todo'
+
 
 
 const App=()=>{
  
  
   return (
-    <>
-  <Mounting color="Red"/>
+     <>
+    {/* //   <Counter/> */}
+    {/* <Todo/> */}
+
+    <EvenOdd/>
     </>
     
  
