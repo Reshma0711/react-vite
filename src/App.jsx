@@ -1,21 +1,20 @@
 
 
 import './App.css' 
-import Counter from './components/hooks/useState/counter'
-import EvenOdd from './components/hooks/useState/evenodd'
-import Todo from './components/hooks/useState/todo'
+import CustomButton1 from './components/button/button1'
+
 
 
 
 const App=()=>{
- 
+
+ const  onClick=(childdata)=>{
+    console.log(childdata)
+  }
  
   return (
      <>
-    {/* //   <Counter/> */}
-    {/* <Todo/> */}
-
-    <EvenOdd/>
+       <CustomButton1 onPress={onClick}/>
     </>
     
  
@@ -23,3 +22,9 @@ const App=()=>{
   )
 }
 export default App
+
+
+
+// App passes onClick as the onPress prop to CustomButton1.
+// When the button is clicked, myPress in CustomButton1 sends an object with data ({ name: "Reshma", designation: "FrontEnd Dev" }) to the parent.
+// The onClick function in App receives this data as childdata and logs it to the console.
