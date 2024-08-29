@@ -1,6 +1,6 @@
 import { useState } from "react";
 import jshelper from "./js-helper";
-import CustomCard from "../../card/customcard2";
+import CustomCard, { CustomCard1 } from "../../card/customcard2";
 import Button from 'react-bootstrap/Button';
 
 const Todo = () => {
@@ -42,7 +42,7 @@ const Todo = () => {
         {todos.map((eachTodo, index) => {
           return (
             <div key={index} style={{ flex: "1 1 calc(25% - 10px)" }}>
-              <CustomCard id={eachTodo.id} title={eachTodo.text} />
+              <CustomCard1 id={eachTodo.id} title={eachTodo.text} />
                <Button  onClick={()=>delHandler(eachTodo.id)}style={{ backgroundColor: 'red' }}>Delete Card</Button>  
                <Button  onClick={()=>resetHandler(eachTodo.id)}style={{ backgroundColor: 'yellow', color:"black" }}>Update Card</Button>  
             </div>

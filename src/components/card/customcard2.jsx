@@ -21,3 +21,21 @@ function CustomCard({id,title,onClick}) {
 }
 
 export default CustomCard;
+
+
+
+
+function CustomCard1({id,title,onClick}) {
+  return (
+    <Card style={{ width: '15rem' ,display: "flex", rowGap:"5px" }}>
+      <Card.Body onClick={onClick}>
+        <Card.Title>{id}</Card.Title>
+        <Card.Text>
+          {title}
+        </Card.Text>  
+      </Card.Body>
+    </Card>
+  );
+}
+
+export {CustomCard1};
