@@ -1,7 +1,8 @@
 
 
 import './App.css' 
-import UncontrolledForm from './components/hooks/useRef/uncontrolledcomponent'
+import ControlledForm from './components/hooks/controlledForm/controlledform'
+
 
 
 
@@ -13,7 +14,8 @@ const App=()=>{
  
   return (
      <>
-     <UncontrolledForm/> 
+    <ControlledForm/>
+
     </>
     
  
