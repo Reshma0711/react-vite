@@ -16,7 +16,7 @@ const Uncontrolled=()=>{
           const onSubmit=(event)=>{
                     event.preventDefault();
 
-
+                  
                     const modelError=modelValidator(formData.model)
                     const mobileError=mobileValidator(formData.mobileNumber)
 
@@ -43,20 +43,47 @@ const Uncontrolled=()=>{
 
                 console.log(name,value,"userinput")
                 setFormData({...formData,[name]:value})
+                
 
-               
-                switch(name){
-                    case "model":
-                        modelValidator(name)
-                        break;
-                    case  "mobileNumber":
-                        mobileValidator(name)
-                        break;
+                switch (name) {
+                  case "model":
+                     modelError = modelValidator(value);
+        setFormErrors((prevErrors) => ({
+          ...prevErrors,
+          modelError,
+        }));
+        break;
+                  case "mobileNumber":
+                   
                 }
+               
+                
           }
-   const modelValidator=()=>{
+   const modelValidator=(name)=>{
+                   let modelError = "";
+                   const modelRegx = /^samsung/i;
 
+                   if (!name) {
+                     modelError = "Please Enter ModelName";
+                   } else if (!modelRegx.test(name)) {
+                     modelError = "Please Enter Proper Samsung MOdel";
+                   }
+
+                   return modelError;    
    }
+
+
+   
+  const mobileValidator = (value) => {
+    let moberror = "";
+    const modelRegx = /^[6-9][0-9]{9}$/;
+    if (!value) {
+      moberror = "Please Enter MobileNumber";
+    } else if (!modelRegx.test(value)) {
+      moberror = "Please Enter Valid MobileNumber";
+    }
+    return moberror;
+  };
 
     return (
       <>
