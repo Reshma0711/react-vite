@@ -1,7 +1,7 @@
 
 
 import './App.css' 
-import ControlledForm from './components/hooks/controlledForm/controlledform'
+import ControlledForm from './components/hooks/controlledForm/controlledformwithsinglestate'
 
 
 
