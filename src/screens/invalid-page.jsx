@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const InvalidScreen=()=>{
+    <NavBar/>
   const navigation=useNavigate()
         const handleNavigation=()=>{
             navigation("/")
