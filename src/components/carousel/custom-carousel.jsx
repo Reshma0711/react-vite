@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Make sure you have Bootstrap CSS
 import './/customcarousel.css'
-function UncontrolledExample() {
+function CustomCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
@@ -44,4 +44,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default CustomCarousel;
