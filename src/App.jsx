@@ -12,10 +12,10 @@ const App=()=>{
  
   return (
      <>
-    {/* //   <Counter/> */}
+       <Counter/> 
     {/* <Todo/> */}
 
-    <EvenOdd/>
+    {/* <EvenOdd/> */}
     </>
     
  

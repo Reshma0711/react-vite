@@ -9,9 +9,9 @@ const Counter =()=>{
    const ageHandler=(type)=>{
     switch(type){
         case "INCREMENT":
-            setInterval(()=>{
-                setAge(age=>age+1)
-            },1000)
+            // setInterval(()=>{
+            //     setAge(age=>age+1)
+            // },1000)
             setAge(age+1)
 
             break;
