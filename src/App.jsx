@@ -1,7 +1,9 @@
 
 
 import './App.css' 
-import ControlledForm from './components/hooks/controlledForm/controlledformwithsinglestate'
+
+import UseEffectExample from './components/hooks/useEffect/example1'
+import Example2 from './components/hooks/useEffect/example2'
 
 
 
@@ -14,7 +16,8 @@ const App=()=>{
  
   return (
      <>
-    <ControlledForm/>
+
+    <Example2/>
 
     </>
     
