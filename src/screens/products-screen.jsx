@@ -1,10 +1,14 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { Userdetails } from "../navigation/navigationstack";
 
 const Productscreen = () => {
   const [product, setProduct] = useState([]);
+
+  const globaldata=useContext(Userdetails)
+  console.log(globaldata)
 
   useEffect(() => {
     fetchData();
@@ -23,6 +27,7 @@ const Productscreen = () => {
 
   return (
     <div>
+      <h3>welcome {globaldata.username}</h3>
       <h3>List Of Products</h3>
       {product.length > 0 ? (
         product.map((item) => (
