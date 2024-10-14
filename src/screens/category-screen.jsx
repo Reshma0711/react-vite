@@ -16,7 +16,7 @@ const Categoryscreen = () => {
         {/* <Button>
           <Link to="electronics">Electronics</Link>
         </Button> */}
-        <Button style={{ backgroundColor: "black" ,color:"whitesmoke"}}>
+        <Button style={{ backgroundColor: "black" ,color:"white"}}>
           <Link to="Jewellery">Jewellery</Link>
         </Button>
       </div>

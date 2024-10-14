@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../components/navbar/navbar";
 
 
 
