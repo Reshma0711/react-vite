@@ -1,10 +1,11 @@
 
-
+ import React from "react"
 
 
 const CustomButton=(prop)=>{
+    console.log(prop.text)
     const {text="Button",onPress=(()=>{}),bgcolor}=prop
-     const buttonstyles={backgroundColor:bgcolor}
+     const buttonstyles={backgroundColor:"green"}
     return(
          <button onClick={onPress} style={buttonstyles}>{text}</button>
     )
