@@ -9,22 +9,32 @@ import CategoryScreen from "../screens/category-screen";
 import JewelleryScreen from "../screens/jewellery-screen";
 import Productscreen from "../screens/products-screen";
 import ProductDetails from "../screens/products-details";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useReducer, useState } from "react";
+import { counterreducer, initialState } from "./counterHelper";
 
 // Create context for user details
 export const Userdetails = createContext();
 
+export const GlobalCounter=createContext();
+
 const NavigationStack = () => {
 
   const [isDark,setIsDark]=useState(true);
-
+   
+   const [currentstate,dispatch]=useReducer(counterreducer,initialState)
 
   const themeHandler=()=>{
       setIsDark(!isDark)
   }
 
   return (
-    // Wrap the provider around the application
+    <GlobalCounter.Provider value={
+    {  currentstate:currentstate,
+      dispatch:dispatch
+    }
+    }>
+
+       
     <Userdetails.Provider value={{
        username:"Reshma",
       theme:isDark,
@@ -54,6 +64,8 @@ const NavigationStack = () => {
         )}
       </>
     </Userdetails.Provider>
+    </GlobalCounter.Provider>
+
   );
 };
 
