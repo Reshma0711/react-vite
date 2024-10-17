@@ -1,4 +1,5 @@
 import CustomHeart from "../components/heart/heart";
+import useAxios from "../components/hooks/customhook/useaxios";
 
 
 
@@ -11,6 +12,10 @@ import CustomHeart from "../components/heart/heart";
 
 
 const AboutScreen = () => {
+
+  const [recipes,error,loading]=useAxios('https://dummyjson.com/recipes');
+
+ console.log(recipes,error)
   return (
     <>
       <h1>WELCOME TO ABOUT SCREEN</h1>

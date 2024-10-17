@@ -18,7 +18,7 @@ const Usecallbackexample = () => {
 
     const toggleHandler=useCallback(()=>{
         setToggle(!toggle)
-    },)
+    },[toggle])
 
 
 
