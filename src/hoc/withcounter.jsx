@@ -4,8 +4,8 @@ import { useState } from "react"
 
 
 
-const withCounter =(Component)=>{
-    return ()=>{
+const WithCounter =(Component)=>{
+   
 
        const [count,setCount]=useState(0)
 
@@ -14,7 +14,7 @@ const withCounter =(Component)=>{
      }
         return <Component count={count} incrementCount={incrementHandler}/>
     }
-}
 
 
-export default withCounter
+
+export default WithCounter

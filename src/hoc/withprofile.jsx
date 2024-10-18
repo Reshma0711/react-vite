@@ -1,11 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const withProfile = (Component) => {
-  return () => {
+const WithProfile = (Component) => {
+  return (props) => {
     const [profileData, setProfileData] = useState({});
 
-    // Move fetchData function before it's used in useEffect
     const fetchData = async () => {
       try {
         const { data, status } = await axios.get(
@@ -20,11 +19,11 @@ const withProfile = (Component) => {
     };
 
     useEffect(() => {
-      fetchData(); // Call fetchData after it's defined
+      fetchData();
     }, []);
 
-     <Component profile={profileData} />;
+    return <Component {...props} profile={profileData} />;
   };
 };
 
-export default withProfile;
+export default WithProfile;
