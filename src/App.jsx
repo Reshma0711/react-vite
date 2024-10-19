@@ -1,8 +1,10 @@
 
 
 import './App.css' 
-import Usecallbackexample from './components/hooks/usecallback/usecallbackexample'
-import AboutScreen from './screens/about-screen'
+import Counter from './components/tasks/counter'
+import Crud from './components/tasks/crud'
+import Crudpractice from './components/tasks/crudparctice'
+import ThemeChanger from './components/tasks/themechanger'
 
 
 
@@ -16,9 +18,12 @@ const App=()=>{
  
   return (
      <>
-{/* <Usecallbackexample/> */}
+     
 
-<AboutScreen/>
+     {/* <ThemeChanger/> */}
+
+     <Counter/>
+
 
 
     </>
