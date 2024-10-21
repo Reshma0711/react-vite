@@ -9,6 +9,7 @@ const Counter = () => {
         if(isActive){
        intervalRef.current=  setInterval(()=>{  setCount((prevCount) => prevCount + 1);},500)
        }
+       
 
       
       else if (!isActive && intervalRef.current !== null) {

@@ -11,7 +11,7 @@ const Crudpractice=()=>{
     const [selectedId,setSelectedId]=useState(null)
 
 
-    
+
     const inputhandler=(e)=>{
         console.log(e.target.value)
         setInput(e.target.value)       
