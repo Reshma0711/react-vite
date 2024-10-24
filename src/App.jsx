@@ -23,13 +23,12 @@ const App=()=>{
      
 
      {/* <ThemeChanger/> */}
-{/* 
-    <Counter/> */}
+            <Counter/> 
 
     {/* <UsereducerCrud/> */}
 
 
-    <FetchData/>
+    {/* <FetchData/> */}
 
 
 
